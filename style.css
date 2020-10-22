@@ -94,3 +94,8 @@ li button{
 	outline: none;
 	cursor: pointer;
 }
+
+#plant{
+	float: right;
+	vertical-align: top
+}
