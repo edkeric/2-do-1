@@ -12,11 +12,11 @@ const input = document.querySelector('input');
 			{"name":"img6" , "src":"img/6.png"},
 			{"name":"img7" , "src":"img/7.png"},
 		]
-		let imgIndex = 1;
+		let imgIndex=1;
 
 		function plantGrow(){
 			plant.src = `img/${imgIndex}.png`;
-			if(plants.length > imgIndex+1){
+			if(imgIndex < plants.length - 1){
 			  imgIndex++;
 			} else {
 			  imgIndex = 1;

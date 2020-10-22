@@ -4,14 +4,18 @@
 	box-sizing: border-box;
 }
 body{
+	display:flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
 	height: 100vh;
 	background: beige;
 	background: linear-gradient(139deg,#377e72cb 0%,#664f5bb6 90%);
 }
 .container{
 	position: relative;
+	width: 100%;
 	max-width: 800px;
-	padding: 10px;
+	padding: 50px;
 	margin: 50px auto;
 }
 .addTask{
@@ -96,6 +100,8 @@ li button{
 }
 
 #plant{
-	float: right;
-	vertical-align: top
+	align-self: center;
+	vertical-align: bottom;
+	margin: auto;
+	
 }
