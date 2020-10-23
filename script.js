@@ -49,8 +49,8 @@ const input = document.querySelector('input');
 			const delBtn = document.createElement('button');
 			
 
-			checkBtn.innerHTML = '<i class="fa fa-check"></i>';
-			delBtn.innerHTML = '<i class="fa fa-trash"></i>';
+			checkBtn.innerHTML = '<i class="fas fa-check-square"></i>';
+			delBtn.innerHTML = '<i class="fas fa-eraser"></i>';
 
 
 			if(input.value !==''){
