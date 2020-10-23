@@ -9,21 +9,25 @@ input.addEventListener('keyup', (e) => {
 function addList(e){
 	const notCompleted = document.querySelector('.notCompleted');
 	const Completed = document.querySelector('.Completed');
-	
+
+	var itemSpan = document.createElement('span')
+	itemSpan.contentEditable = "true";
 	const newLi = document.createElement('li');
-	newLi.contentEditable = "true";
+	
+
+
+
 	const checkBtn = document.createElement('button');
-	checkBtn.contentEditable = "false";
 	const delBtn = document.createElement('button');
-	delBtn.contentEditable = "false";
 	
 	checkBtn.innerHTML = '<i class="fa fa-check"></i>';
 	delBtn.innerHTML = '<i class="fa fa-trash"></i>';
 	
 	if(input.value !==''){
-		newLi.textContent = input.value;
+		itemSpan.textContent = input.value;
 		input.value = '';
 		notCompleted.appendChild(newLi);
+		newLi.appendChild(itemSpan);
 		newLi.appendChild(checkBtn);
 		newLi.appendChild(delBtn);
 	}
@@ -33,7 +37,7 @@ function addList(e){
 		parent.remove();
 		Completed.appendChild(parent);
 		checkBtn.style.display = 'none';
-		newLi.contentEditable = "false";
+		itemSpan.contentEditable = "false";;
 	});
 	
 	delBtn.addEventListener('click', function(){
