@@ -131,6 +131,10 @@ li button {
 
 @media screen and (max-width: 800px) {
 	.container {padding: 0px}
-	.addTask {padding: 20px}
+	.addTask {margin-top: 20px;padding: 20px}
 	.notCompleted, .Completed {padding: 20px}
+}
+
+@media screen and (max-width: 500px) {
+	img#plant {width: 100%}
 }
