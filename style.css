@@ -3,7 +3,8 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
+
+body {
 	display:flex;
 	justify-content: space-around;
 	align-items: flex-end;
@@ -16,20 +17,21 @@ body{
 	background-attachment: fixed;
 }
 
-
-.container{
+.container {
 	position: relative;
 	width: 100%;
 	max-width: 800px;
 	padding: 50px;
 	margin: 50px auto;
 }
+
 .addTask{
 	width: 100%;
 	display: flex;
 	padding: 70px 0;
 }
-.addTask > input[type="text"]{
+
+.addTask > input[type="text"] {
 	width: 90%;
 	color: #222;
 	border:none;
@@ -41,7 +43,8 @@ body{
     outline: none;
     font-family: 'Courier New', Courier, monospace;
 }
-.addTask button{
+
+.addTask button {
 	margin: 0 5px;
 	background: none;
 	color: #222;
@@ -53,11 +56,12 @@ body{
 	border-radius: 7px;
 	cursor: pointer;
 }
-.notCompleted, .Completed{
+.notCompleted, .Completed {
 	margin: 5px 0;
 	padding: 50px;
 }
-h3{
+
+h3 {
 	font-size: 28px;
 	text-transform: uppercase;
 	text-align: center;
@@ -65,16 +69,17 @@ h3{
     font-family: 'Courier New', Courier, monospace;
 }
 
-i.fas{
+i.fas {
 	color:  rgb(130, 130, 130);
 	font-size: 20px;
 }
 
-ol{
+ol {
 	list-style: none;
 	counter-reset: my-counter;
 }
-ol li{
+
+ol li {
 	width: 100%;
 	padding: 18px;
 	margin: 5px 0;
@@ -86,10 +91,12 @@ ol li{
 	letter-spacing: 0.3em;
   	color: #454545;
 }
-ol.Completed li{
+
+ol.Completed li {
 	background: #c5efb993;
 }
-ol li::before{
+
+ol li::before {
 	content: counter(my-counter);
 	background:none;
 	width: 1.8rem;
@@ -102,7 +109,8 @@ ol li::before{
 	color:#666;
 	margin-right: 1rem;
 }
-li button{
+
+li button {
 	float: right;
 	padding: 5px;
     font-size: 38px;
@@ -115,8 +123,14 @@ li button{
 	cursor: pointer;
 }
 
-#plant{
+#plant {
 	vertical-align: bottom;
 	margin: auto;
 	
+}
+
+@media screen and (max-width: 800px) {
+	.container {padding: 0px}
+	.addTask {padding: 20px}
+	.notCompleted, .Completed {padding: 20px}
 }
